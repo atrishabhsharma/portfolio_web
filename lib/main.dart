@@ -69,7 +69,7 @@ class HomeView extends StatelessWidget {
                           top: 10, bottom: 250, left: 100, right: 100),
                       child: Text(
                         'this is fun  nbvnbvnvnbvnbvnbvnbcbcnbcnbcvyvvtyvy \n'
-                        'j k jhbvjhvjhvjgvjhcgxchvkjbkjvjybiu',
+                        'j k jhbvjhvjhvjgvjhcgxchvkjbkjvj',
                         style: TextStyle(
                           fontSize: 15,
                           color: Colors.lightBlueAccent[700],
