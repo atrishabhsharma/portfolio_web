@@ -50,175 +50,164 @@ class HomeView extends StatelessWidget {
                   )),
 
               /// Text RISHABH
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    margin: EdgeInsets.only(top: 170, left: 120),
-                    child: Text(
-                      'Hello, I am',
-                      style: TextStyle(
-                        fontFamily: 'RedRose',
-                        color: Colors.blue[200],
-                        fontSize: 22,
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      margin: EdgeInsets.only(top: 120, left: 120),
+                      child: Text(
+                        'Hello, I am',
+                        style: TextStyle(
+                          fontFamily: 'RedRose',
+                          color: Colors.blue[200],
+                          fontSize: 22,
+                        ),
                       ),
                     ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    margin: EdgeInsets.only(top: 10, left: 120),
-                    child: Text(
-                      '</RISHABH>',
-                      style: TextStyle(
-                        letterSpacing: 20.0,
-                        fontFamily: 'RedRose',
-                        color: Colors.white,
-                        fontSize: 50,
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      margin: EdgeInsets.only(top: 10, left: 120),
+                      child: Text(
+                        '</RISHABH>',
+                        style: TextStyle(
+                          letterSpacing: 10.0,
+                          fontFamily: 'RedRose',
+                          color: Colors.white,
+                          fontSize: 50,
+                        ),
                       ),
                     ),
-                  ),
 
-                  ///// Developer qualification ///////
-                  Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 50, left: 120),
-                        child: Text(
-                          '/Flutter/',
-                          style: TextStyle(
-                            fontFamily: 'RedRose',
-                            color: Colors.blue[300],
-                            fontSize: 18,
+                    ///// Developer qualification ///////
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 50, left: 120),
+                            child: Text(
+                              '/Flutter/',
+                              style: TextStyle(
+                                fontFamily: 'RedRose',
+                                color: Colors.blue[300],
+                                fontSize: 18,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(top: 50, left: 20),
-                        child: Text(
-                          '/python/',
-                          style: TextStyle(
-                            fontFamily: 'RedRose',
-                            color: Colors.blue[300],
-                            fontSize: 18,
+                          Container(
+                            margin: EdgeInsets.only(top: 50, left: 20),
+                            child: Text(
+                              '/python/',
+                              style: TextStyle(
+                                fontFamily: 'RedRose',
+                                color: Colors.blue[300],
+                                fontSize: 18,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(top: 50, left: 20),
-                        child: Text(
-                          '/WebD/',
-                          style: TextStyle(
-                            fontFamily: 'RedRose',
-                            color: Colors.blue[300],
-                            fontSize: 18,
+                          Container(
+                            margin: EdgeInsets.only(top: 50, left: 20),
+                            child: Text(
+                              '/WebD/',
+                              style: TextStyle(
+                                fontFamily: 'RedRose',
+                                color: Colors.blue[300],
+                                fontSize: 18,
+                              ),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
 
-                  Container(
-                    padding: EdgeInsets.only(top: 50, left: 120),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      '  I am a Full Time App Developer, Focusing on interactive Experience and Apps.\n'
-                      '  Are you Looking for projects or Collab ?  \n'
-                      '  Feel free to check out my Social accouts.',
-                      style: TextStyle(
-                        fontFamily: 'RedRose',
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                    Container(
+                      padding: EdgeInsets.only(top: 50, left: 120),
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'I am a Full Time Flutter Developer. Focusing\n'
+                        'on interactive Experience and Apps. Are you\n'
+                        'Looking for projects or want a collaboration ?\n'
+                        'Than feel free to check out my Social Medias.',
+                        style: TextStyle(
+                          fontFamily: 'RedRose',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 120,
-                      top: 50,
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            child: SignInButton(
+                              Buttons.GitHub,
+                              mini: true,
+                              onPressed: () {
+                                _launchURL('Github');
+                              },
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            child: SignInButton(
+                              Buttons.LinkedIn,
+                              mini: true,
+                              onPressed: () {
+                                _launchURL('linkedin');
+                              },
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            child: SignInButton(
+                              Buttons.Twitter,
+                              mini: true,
+                              onPressed: () {
+                                _launchURL('twitter');
+                              },
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            child: SignInButton(
+                              Buttons.Email,
+                              mini: true,
+                              onPressed: () {
+                                _launchURL('email');
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Container(
-                          child: SignInButton(
-                            Buttons.GitHub,
-                            mini: true,
-                            onPressed: () {
-                              _launchURL('Github');
-                            },
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          child: SignInButton(
-                            Buttons.LinkedIn,
-                            mini: true,
-                            onPressed: () {
-                              _launchURL('linkedin');
-                            },
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          child: SignInButton(
-                            Buttons.Twitter,
-                            mini: true,
-                            onPressed: () {
-                              _launchURL('twitter');
-                            },
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          child: SignInButton(
-                            Buttons.Email,
-                            mini: true,
-                            onPressed: () {
-                              _launchURL('email');
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
 
-                  Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 70, left: 30),
+                    Expanded(
+                      child: Container(
                         alignment: Alignment.bottomLeft,
                         child: Text(
-                          'Copyright © 2020 Rishabh. All Rights Reserved',
+                          'Copyright © 2020 . All Rights Reserved',
                           style: TextStyle(
                             fontFamily: 'RedRose',
-                            color: Colors.white,
+                            color: Colors.blue[200],
                             fontSize: 10,
                           ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(top: 70, left: 950),
-                        alignment: Alignment.bottomRight,
-                        child: Text(
-                          'Built by: Rishabh sharma',
-                          style: TextStyle(
-                            fontFamily: 'RedRose',
-                            color: Colors.white,
-                            fontSize: 10,
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
+                    ),
+                  ],
+                ),
               ),
             ],
           )),
