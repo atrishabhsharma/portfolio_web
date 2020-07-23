@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:url_launcher/url_launcher.dart';
-//import 'package:responsive/responsive_row.dart';
 
 void main() {
   runApp(MyApp());
@@ -127,7 +126,7 @@ class HomeView extends StatelessWidget {
                       child: Text(
                         'I am a Full Time Flutter Developer. Focusing\n'
                         'on interactive Experience and Apps. Are you\n'
-                        'Looking for projects or want a collaboration ?\n'
+                        'Looking for projects or want a collaboration exi?\n'
                         'Than feel free to check out my Social Medias.',
                         style: TextStyle(
                           fontFamily: 'RedRose',
