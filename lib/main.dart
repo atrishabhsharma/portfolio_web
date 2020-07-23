@@ -39,7 +39,7 @@ class HomeView extends StatelessWidget {
               Align(
                   alignment: Alignment.centerRight,
                   child: Opacity(
-                    opacity: .80,
+                    opacity: 1,
                     child: Image.asset(
                       'assets/profile.png',
                       alignment: Alignment.centerRight,
